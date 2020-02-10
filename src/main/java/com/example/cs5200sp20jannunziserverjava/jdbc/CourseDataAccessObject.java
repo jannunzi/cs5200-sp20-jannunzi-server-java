@@ -1,6 +1,7 @@
 package com.example.cs5200sp20jannunziserverjava.jdbc;
 
 import com.example.cs5200sp20jannunziserverjava.models.Course;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,6 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CourseDataAccessObject {
 
     Connection conn;

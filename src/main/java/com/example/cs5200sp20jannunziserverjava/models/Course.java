@@ -14,6 +14,9 @@ public class Course {
     private String title;
 
     @OneToMany(mappedBy = "course")
+    private List<CourseReview> reviews;
+
+    @OneToMany(mappedBy = "course")
     private List<Module> modules;
 
     public void addModule(Module module) {
